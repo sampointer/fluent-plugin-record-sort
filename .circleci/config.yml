@@ -42,7 +42,7 @@ jobs:
             bundle exec rake
 
       - run:
-          name: list filesystems
+          name: list filesystem
           command: find .
 
       # run tests!
@@ -62,5 +62,5 @@ jobs:
       - store_test_results:
           path: /tmp/test-results
       - store_artifacts:
-          path: pkg/*.gem
+          path: ./pkg/*.gem
           destination: gem
