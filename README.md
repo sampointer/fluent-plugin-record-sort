@@ -1,4 +1,4 @@
-# Fluentd Sort Plugin [![CircleCI](https://circleci.com/gh/sampointer/fluent-plugin-record-sort.svg?style=svg)](https://circleci.com/gh/sampointer/fluent-plugin-record-sort)
+# Fluentd Sort Plugin [![CircleCI](https://circleci.com/gh/sampointer/fluent-plugin-record-sort.svg?style=shield)](https://circleci.com/gh/sampointer/fluent-plugin-record-sort)
 
 ## Introduction
 This plugin does two things:
