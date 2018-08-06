@@ -7,7 +7,6 @@ Gem::Specification.new do |spec|
   spec.version       = Fluent::Plugin::Record::Sort::VERSION
   spec.authors       = ['Sam Pointer']
   spec.email         = ['sam@outsidethe.net']
-
   spec.summary       = 'Fluentd plugin for sorting record fields.'
   spec.description   = 'Fluentd plugin for sorting record fields.'
   spec.homepage      = 'https://github.com/sampointer/fluent-plugin-record-sort'

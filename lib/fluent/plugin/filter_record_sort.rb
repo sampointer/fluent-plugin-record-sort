@@ -3,6 +3,9 @@ require 'fluent/config/error'
 
 module Fluent
   module Plugin
+    #
+    # Filter to sort records and remove fields with no value
+    #
     class RecordSortFilter < Fluent::Plugin::Filter
       Fluent::Plugin.register_filter('record_sort', self)
       def configure(conf)
