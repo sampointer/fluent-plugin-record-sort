@@ -1,19 +1,15 @@
 require 'fluent/plugin/filter'
+require 'fluent/config/error'
+
 module Fluent::Plugin
-  class RecordTransformerFilter < Fluent::Plugin::Filter
-    Fluent::Plugin.register_filter('record_transformer', self)
-
-    desc 'Enable record sorting'
-    config_param :enable, :bool, default: true
-
+  class RecordSortFilter < Fluent::Plugin::Filter
+    Fluent::Plugin.register_filter('record_sort', self)
     def configure(conf)
       super
     end
 
     def filter(tag, time, record)
-      if @enable
-        return record.sort.to_h
-      end
+      return record.sort.to_h
     end
 
   end

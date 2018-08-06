@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-record-sort"
   spec.version       = Fluent::Plugin::Record::Sort::VERSION
   spec.authors       = ["Sam Pointer"]
-  spec.email         = ["sam.pointer@opsunit.com"]
+  spec.email         = ["sam@outsidethe.net"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Fluentd plugin for sorting record fields.}
+  spec.description   = %q{Fluentd plugin for sorting record fields.}
+  spec.homepage      = "https://github.com/sampointer/fluent-plugin-record-sort"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
