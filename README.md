@@ -1,4 +1,4 @@
-# Fluentd Sort Plugin [![CircleCI](https://circleci.com/gh/sampointer/fluent-plugin-record-sort.svg?style=shield)](https://circleci.com/gh/sampointer/fluent-plugin-record-sort)[![Gem Version](https://badge.fury.io/rb/fluent-plugin-record-sort.svg)](https://badge.fury.io/rb/fluent-plugin-record-sort)
+# Fluentd Sort Plugin [![CircleCI](https://circleci.com/gh/sampointer/fluent-plugin-record-sort.svg?style=shield)](https://circleci.com/gh/sampointer/fluent-plugin-record-sort) [![Gem Version](https://badge.fury.io/rb/fluent-plugin-record-sort.svg)](https://badge.fury.io/rb/fluent-plugin-record-sort)
 
 ## Introduction
 This plugin does two things:
