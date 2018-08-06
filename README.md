@@ -4,7 +4,7 @@
 This plugin does two things:
 
 * Sorts the field in each record according to the default ruby `#Array.sort`
-* Removes fields it considers to either be `nil?` or `empty?`
+* Removes fields who's values it considers to either be `nil?` or `empty?`
 
 ## Configuration
 ```xml
