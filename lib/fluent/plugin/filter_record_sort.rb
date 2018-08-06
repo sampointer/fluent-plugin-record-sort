@@ -9,6 +9,7 @@ module Fluent::Plugin
     end
 
     def filter(tag, time, record)
+      record.reject! { |_k, v| v.nil? || v.empty? }
       return record.sort.to_h
     end
 
