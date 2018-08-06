@@ -9,7 +9,12 @@ module Fluent::Plugin
     end
 
     def filter(tag, time, record)
-      record.reject! { |_k, v| v.nil? || v.empty? }
+      # Remove empty fields
+      begin
+        record.reject! { |_k, v| v.nil? || (v.respond_to?(:empty?) && v.empty?) }
+      rescue NoMethodError
+      end
+
       return record.sort.to_h
     end
 
