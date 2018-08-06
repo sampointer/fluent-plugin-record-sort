@@ -41,6 +41,10 @@ jobs:
           command: |
             bundle exec rake
 
+      - run:
+          name: list filesystems
+          command: find .
+
       # run tests!
 #      - run:
 #          name: run tests
