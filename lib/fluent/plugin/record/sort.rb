@@ -1,4 +1,4 @@
-require "fluent/plugin/record/sort/version"
+require 'fluent/plugin/record/sort/version'
 
 module Fluent
   module Plugin
