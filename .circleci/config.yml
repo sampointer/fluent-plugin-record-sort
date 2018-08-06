@@ -36,9 +36,10 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      # Database setup
-      #- run: bundle exec rake db:create
-      #- run: bundle exec rake db:schema:load
+      - run:
+          name: run default rake target
+          command: |
+            bundle exec rake
 
       # run tests!
 #      - run:
@@ -57,5 +58,5 @@ jobs:
       - store_test_results:
           path: /tmp/test-results
       - store_artifacts:
-          path: /tmp/test-results
-          destination: test-results
+          path: pkg/*.gem
+          destination: gem
