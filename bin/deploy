@@ -1,0 +1,16 @@
+#!/bin/bash -x
+#
+# deploy to rubygems.
+
+if [[ -z ${CI} ]]; then
+  echo "not running inside a CI system, exiting"
+  exit 1
+fi
+
+gem=$(ls pkg/*.gem | tail -1)
+mkdir -p ~/.gem/
+cp assets/credentials ~/.gem/credentials
+sed -i "s/REPLACEME/${rubygems_api_key}/g" ~/.gem/credentials
+chmod 0600 ~/.gem/credentials
+echo "Pushing ${gem}"
+gem push ${gem}

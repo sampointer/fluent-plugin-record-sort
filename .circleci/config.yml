@@ -42,6 +42,11 @@ jobs:
             bundle exec rake
 
       - run:
+          name: publish to rubygems.org
+          command: |
+            bin/deploy
+
+      - run:
           name: list filesystem
           command: find .
 
