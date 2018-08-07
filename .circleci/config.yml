@@ -8,7 +8,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - gem-{{ .BuildNum }}
+            - gem-{{ .Revision }}
       - run:
           name: push to rubygems
           command: bin/deploy
@@ -35,7 +35,7 @@ jobs:
       - save_cache:
           paths:
             - pkg
-          key: gem-{{ .BuildNum }}
+          key: gem-{{ .Revision }}
       - save_cache:
           paths:
             - ./vendor/bundle
